@@ -1,0 +1,16 @@
+
+EXPERIMENT 3 – REACTION FLYWHEEL CONTROL RESULTS
+=================================================
+Stabilisation:
+  Settling time: Roll=204.1s, Pitch=289.6s, Yaw=147.6s
+  Pointing accuracy (deg): Roll=0.0370, Pitch=0.0724, Yaw=0.0000, Overall=0.0813
+  Bandwidth (Hz): Roll=0.013, Pitch=0.012, Yaw=0.015
+  Max wheel speed (rpm): Roll=0.9, Pitch=4.4, Yaw=0.7
+  Saturation: Roll=NO, Pitch=NO, Yaw=NO
+
+Manoeuvre:
+  Settling time: Roll=623.0s, Pitch=789.3s, Yaw=177.9s
+  Pointing accuracy (deg): Roll=0.3334, Pitch=0.6685, Yaw=0.0000, Overall=0.7470
+  Bandwidth (Hz): Roll=0.013, Pitch=0.013, Yaw=0.015
+  Max wheel speed (rpm): Roll=7.7, Pitch=15.3, Yaw=6.7
+  Saturation: Roll=NO, Pitch=NO, Yaw=NO
