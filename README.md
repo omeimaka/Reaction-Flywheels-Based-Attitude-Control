@@ -1,7 +1,7 @@
 
 Experiment 3 – **Reaction Flywheel Attitude Control**
 
-**Objective:** Simulate attitude stabilisation and manoeuvre using continuous‑torque reaction flywheels with a PID controller, analyse pointing accuracy, flywheel saturation, bandwidth, and compare with thruster control.
+**Objective:** Simulate attitude stabilisation and manoeuvre using continuous‑torque reaction flywheels with a PID controller, analyse pointing accuracy, flywheel saturation, bandwidth.
 
 ## Spacecraft & Flywheel Parameters
 - **Orbit:** GEO (a = 36 000 km, e = 0)
@@ -62,7 +62,7 @@ The spacecraft smoothly settles to the target within a few hundred seconds (stab
 **Figure:** `stab_actuator.png`, `man_actuator.png`
 
 ### 3. Phase portraits
-The trajectories spiral into the target point, confirming a stable, well‑damped response (unlike the thruster limit cycle).
+The trajectories spiral into the target point, confirming a stable, well‑damped response.
 
 **Figure:** `stab_phase.png`, `man_phase.png`
 
@@ -74,7 +74,7 @@ Measured from the steady‑state oscillation envelope (last 500 s for stabilisat
 | Stabilisation | ~0.01° | ~0.01° | ~0.02° | ~0.02°        |
 | Manoeuvre     | ~0.05° | ~0.07° | ~0.10° | ~0.13°        |
 
-The reaction wheels achieve **sub‑degree pointing accuracy**, vastly better than the ±1–2° limit cycle of the thruster system.
+The reaction wheels achieve **sub‑degree pointing accuracy**.
 
 **Figure:** `pointing_accuracy.png`
 
@@ -84,10 +84,7 @@ Closed‑loop bandwidth is approximately 0.01–0.02 Hz, typical for large GEO
 ### 6. Saturation check
 No axis saturates; maximum wheel speed is under 25 rpm, well within the 3000 rpm envelope.
 
-## Answers to Experiment Questions
-
-1. **Control bandwidth** – ~0.01–0.02 Hz (low, suitable for station‑keeping and slow slews).  
-2. **Accuracy vs thrusters** – Flywheels provide roughly 10–50× better pointing accuracy (arcminute level vs degrees).  
-3. **Fast manoeuvring** – Flywheels can perform moderate slews, but to achieve very fast manoeuvres, larger wheels or higher gains would risk saturation. For rapid large‑angle slews, thrusters are preferred.  
-4. **Saturation** – In this simulation, no saturation occurs. However, a larger moment arm or higher gain could cause the wheels to hit 3000 rpm; then a desaturation system (e.g., magnetorquers) would be required.
+ **Control bandwidth** – ~0.01–0.02 Hz (low, suitable for station‑keeping and slow slews).  
+ **Fast manoeuvring** – Flywheels can perform moderate slews, but to achieve very fast manoeuvres, larger wheels or higher gains would risk saturation. For rapid large‑angle slews. 
+**Saturation** – In this simulation, no saturation occurs. However, a larger moment arm or higher gain could cause the wheels to hit 3000 rpm; then a desaturation system (e.g., magnetorquers) would be required.
 
