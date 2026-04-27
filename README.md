@@ -81,14 +81,3 @@ No axis saturates; maximum wheel speed is under 25 rpm, well within the 3000�
 3. **Fast manoeuvring** – Flywheels can perform moderate slews, but to achieve very fast manoeuvres, larger wheels or higher gains would risk saturation. For rapid large‑angle slews, thrusters are preferred.  
 4. **Saturation** – In this simulation, no saturation occurs. However, a larger moment arm or higher gain could cause the wheels to hit 3000 rpm; then a desaturation system (e.g., magnetorquers) would be required.
 
-## How to Run
-
-### In Google Colab (one click)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/attitude-control/blob/main/experiment3_reaction_wheels/reaction_wheel_sim.ipynb)
-
-### Locally
-```bash
-git clone https://github.com/yourusername/attitude-control.git
-cd experiment3_reaction_wheels
-pip install numpy matplotlib
-python reaction_wheel_sim.py
