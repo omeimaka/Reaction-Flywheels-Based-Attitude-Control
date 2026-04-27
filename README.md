@@ -1,4 +1,5 @@
-# Experiment 3 – Reaction Flywheel Attitude Control
+
+Experiment 3 – **Reaction Flywheel Attitude Control**
 
 **Objective:** Simulate attitude stabilisation and manoeuvre using continuous‑torque reaction flywheels with a PID controller, analyse pointing accuracy, flywheel saturation, bandwidth, and compare with thruster control.
 
