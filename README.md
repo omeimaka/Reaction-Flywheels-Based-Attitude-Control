@@ -13,11 +13,16 @@ Experiment 3 – **Reaction Flywheel Attitude Control**
 ## Control Law
 A decoupled PID controller generates continuous torque commands:
 
-\[
-M_{c,i} = -\left( K_{p,i} e_i + K_{i,i}\int e_i dt + K_{d,i} \frac{de_i}{dt} \right)
-\]
+$$
+M_{c,i} = -\left( K_{p,i} e_i + K_{i,i}\int e_i \, dt + K_{d,i} \frac{de_i}{dt} \right)
+$$
 
-with error \( e_i = \theta_i - \theta_{i,\text{target}} \).  
+with error 
+
+$$
+e_i = \theta_i - \theta_{i,\text{target}} .
+$$
+
 Gains are chosen per axis to account for the different moments of inertia:
 
 | Axis | Kp (N·m/rad) | Kd (N·m/(rad/s)) | Ki (N·m/(rad·s)) |
@@ -26,7 +31,11 @@ Gains are chosen per axis to account for the different moments of inertia:
 | Pitch| 0.5          | 10               | 0.01             |
 | Yaw  | 1.0          | 20               | 0.02             |
 
-The flywheel speed evolves according to \( \dot{\omega}_w = -M_c / I_w \). If the wheel speed reaches ±314 rad/s, saturation is flagged (though not enforced here).
+The flywheel speed evolves according to 
+
+$$
+\dot{\omega}_{w,i} = -\frac{M_{c,i}}{I_w}.
+$$
 
 ## Simulation Setup
 
